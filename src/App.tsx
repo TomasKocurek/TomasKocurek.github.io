@@ -1,8 +1,8 @@
 function App() {
   return (
     <>
-      <div>
-        <h1>Tomáš Kocůrek</h1>
+      <div className="flex flex-col justify-center items-center w-full h-full">
+        <span>Tomáš Kocůrek</span>
       </div>
     </>
   );
