@@ -1,9 +1,10 @@
+import "./assets/scss/index.scss";
+import BusinessCardPage from "./pages/BusinessCardPage/BusinessCardPage";
+
 function App() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center w-full h-full">
-        <span>Tomáš Kocůrek</span>
-      </div>
+      <BusinessCardPage />
     </>
   );
 }
