@@ -11,7 +11,7 @@ const BusinessCardPage = () => {
             <img src={profilePic} alt="Profile Picture" />
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <span className="h1">Tomáš Kocůrek</span>
+            <span className="h1 text-[--clr-primary]">Tomáš Kocůrek</span>
             <span className="text-lg">Software Developer</span>
             <span className="text-xs">.NET • React • Angular</span>
             <LinksRow />
