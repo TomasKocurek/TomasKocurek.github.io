@@ -12,8 +12,8 @@ const BusinessCardPage = () => {
           </div>
           <div className="flex flex-col gap-2 items-center">
             <span className="h1 text-[--clr-primary]">Tomáš Kocůrek</span>
-            <span className="text-lg">Software Developer</span>
-            <span className="text-xs">.NET • React • Angular</span>
+            <span className="text-xl">Software Developer</span>
+            <span className="text-md">.NET • React • Angular</span>
             <LinksRow />
           </div>
         </div>
