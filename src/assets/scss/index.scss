@@ -15,10 +15,10 @@ body {
   width: 100%;
   height: 100vh;
 
-  background: rgb(35, 36, 39);
+  background: var(--clr-bg);
   background: linear-gradient(
     141deg,
-    rgba(35, 36, 39, 1) 0%,
+    var(--clr-bg) 0%,
     var(--clr-primary) 100%
   );
 

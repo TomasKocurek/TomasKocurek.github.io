@@ -5,11 +5,14 @@ import styles from "./BusinessCardPage.module.scss";
 const BusinessCardPage = () => {
   return (
     <>
-      <div className={styles.card}>
-        <div className="w-[min(420px,_90%)] mx-auto rounded-[2rem] bg-[--clr-bg] p-4 flex flex-col items-center gap-4">
+      <div className="flex flex-col w-full h-full items-center justify-center">
+        {/* Card */}
+        <div className={styles.card}>
+          {/* Profile picture */}
           <div className="w-[30%] aspect-square bg-[--clr-bg-light] overflow-hidden rounded-[50%]">
             <img src={profilePic} alt="Profile Picture" />
           </div>
+          {/* Text info */}
           <div className="flex flex-col gap-2 items-center">
             <span className="h1 text-[--clr-primary]">Tomáš Kocůrek</span>
             <span className="text-xl">Software Developer</span>
