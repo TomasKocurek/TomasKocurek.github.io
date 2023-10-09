@@ -1,0 +1,40 @@
+.btnContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .label {
+    display: none;
+    position: absolute;
+    bottom: -2rem;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    aspect-ratio: 1/1;
+
+    background-color: var(--clr-bg-light);
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    .label {
+      display: block;
+    }
+
+    .btn {
+      transform: scale(1.2);
+    }
+  }
+}

@@ -1,12 +1,14 @@
 import { ReactNode } from "react";
+import styles from "./LinksRow.module.scss";
 
 export type LinkButtonProps = {
   url: string;
   icon: ReactNode;
+  label: string;
 };
 
 const LinkButton = (props: LinkButtonProps) => {
-  const { url, icon } = props;
+  const { url, icon, label } = props;
 
   const handleClick = () => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -14,11 +16,11 @@ const LinkButton = (props: LinkButtonProps) => {
 
   return (
     <>
-      <div
-        className="bg-[--clr-bg-light] w-[40px] cursor-pointer aspect-square rounded-[50%] flex items-center justify-center"
-        onClick={handleClick}
-      >
-        {icon}
+      <div className={styles.btnContainer}>
+        <div className={styles.btn} onClick={handleClick}>
+          {icon}
+        </div>
+        <span className={styles.label}>{label}</span>
       </div>
     </>
   );
