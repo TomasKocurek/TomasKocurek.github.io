@@ -21,7 +21,7 @@ const LinksRow = () => {
 
   return (
     <>
-      <div className="flex flex-row gap-4 items-center justify-center pt-2 pb-4">
+      <div className="flex flex-row gap-4 items-center justify-center pt-2">
         {renderBtns()}
       </div>
     </>
